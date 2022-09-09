@@ -1,0 +1,15 @@
+.dccache
+venv/
+.pytest_cache
+__pycache__
+# Unit test
+.coverage
+coverage.xml
+
+# Test
+/coverage
+.scannerwork
+
+#Zap
+.sec/reports/*
+!.sec/reports/.gitkeep

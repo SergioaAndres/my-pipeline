@@ -1,0 +1,43 @@
+{
+  "name": "my-pipeline",
+  "version": "0.1.0",
+  "bin": {
+    "my-pipeline": "bin/my-pipeline.js"
+  },
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest --all --coverage",
+    "cdk": "cdk",
+    "eslint": "npx eslint --ext .ts,.tsx --no-error-on-unmatched-pattern bin lib test build-tools",
+    "snyk-sca": "npx snyk test",
+    "snyk-iac": "npx snyk iac test cdk.out/*.template.json cdk.out/*/*.template.json --policy-path='.snyk'"
+  },
+  "devDependencies": {
+    "@types/jest": "^27.5.2",
+    "@types/node": "10.17.27",
+    "@types/prettier": "2.6.0",
+    "@typescript-eslint/eslint-plugin": "^5.34.0",
+    "@typescript-eslint/parser": "^5.34.0",
+    "aws-cdk": "^2.38.1",
+    "eslint": "^8",
+    "eslint-config-prettier": "^8.5.0",
+    "eslint-import-resolver-node": "^0.3.6",
+    "eslint-import-resolver-typescript": "^3.4.2",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-prettier": "^4.2.1",
+    "jest": "^27.5.1",
+    "prettier": "^2.7.1",
+    "snyk": "^1.997.0",
+    "ts-jest": "^27.1.4",
+    "ts-node": "^10.9.1",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.34.2",
+    "cdk-nag": "^2.15.37",
+    "constructs": "^10.0.0",
+    "js-yaml": "^4.1.0",
+    "source-map-support": "^0.5.21"
+  }
+}

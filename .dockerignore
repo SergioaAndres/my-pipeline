@@ -1,0 +1,9 @@
+.git
+.gitignore
+.iac
+.sec
+.pytest_cache
+venv
+.coverage
+.dccache
+.scannerwork

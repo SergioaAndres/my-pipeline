@@ -1,0 +1,26 @@
+projectName: test
+# Accounts and Regions
+pipelineAccountId: "123456789000"
+pipelineRegion: us-east-2
+devAccountId: "123456789012"
+devRegion: us-east-2
+testAccountId: "123456789011"
+testRegion: us-east-2
+stgAccountId: "123456789010"
+stgRegion: us-east-2
+prodAccountId: "123456789009"
+prodRegion: us-east-2
+# Pipeline
+pipelineName: MyPipeline
+# Pipeline Source
+repoString : <Organization/repository>
+branch : main
+connectionArn : arn:aws:codestar-connections:us-east-2:123456789000:connection/a94072bb-0ac9-4acc-b9a0-413ceaxxxxxx
+# Synth Stage
+# Parameter store paths
+sonarTokenPath : /pipelines/SonarToken
+sonarHostUrlPath : /pipelines/SonarHostUrl
+snykTokenPath: /pipelines/SnykToken
+#Lambda Stack
+allowOrigins: 
+  - https://mytest.poc

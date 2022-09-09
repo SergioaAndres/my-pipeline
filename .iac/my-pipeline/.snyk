@@ -1,0 +1,28 @@
+# Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
+version: v1.25.0
+# ignores vulnerabilities until expiry date; change duration by modifying expiry date
+ignore:
+  SNYK-CC-TF-124:
+    - '*':
+        reason: Pipeline artifact bucket, versioning is not necessary.
+        expires: '2020-06-23T20:36:54.553Z'
+  SNYK-CC-TF-14:
+    - '*':
+        reason: >-
+          The secret is used for the first user login and forced to change the
+          password at first login.
+        expires: '2020-06-23T20:36:54.553Z'
+  SNYK-CC-TF-45:
+    - '*':
+        reason: Pipeline artifact bucket, logging bucket is not necessary.
+        expires: '2020-06-23T20:36:54.553Z'
+  SNYK-CC-TF-99:
+    - '*':
+        reason: Open Api gateway for POC.
+        expires: '2020-06-23T20:36:54.553Z'
+  SNYK-CC-TF-129:
+    - '*':
+        reason: Tracing not necessary.
+        expires: 2020-06-23T20:36:54.553Z
+        created: 2022-08-23T20:33:47.101Z
+patch: {}

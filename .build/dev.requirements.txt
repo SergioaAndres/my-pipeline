@@ -1,0 +1,5 @@
+-r requirements.txt
+pip-audit==2.4.3
+pylint==2.14.5
+pytest==7.1.2
+coverage==6.4.3
